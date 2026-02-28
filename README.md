@@ -11,11 +11,11 @@
 
     B. Lo usamos ya que nos va ayudar a gestionar el tipo de eventos que queremos ya sea conferencias, talleres o hackathons para diferente tipos, ademas de eso nos va ayudar a darle un mejor manejo a la notificaciones ya que sabremos si hay cambios dentro de ese mimo evento 
 
-    2. Mediator
+    2. State
 
     A. Tipo del metodo: Comportamiento
 
-    B. Este nos permite como dice el mismo nombre va ser un mediador entre la gente que quiere estar en un evento academico y la gente que organiza ese evento dejando claro la capacidad la fecha la cantidad de cupos dependiendo del evento y notificando mediante nuestro mediador los cambio realizados.
+    B. Este nos permite como dice el mismo nombre cambiar el estado de el evento y generar esa notifiacion de que si hubo algun cambio dentro de este evento.
 
 ## Punto 3 
 
@@ -54,8 +54,8 @@ El sistema de EventSync debe tener:
 | **Precondiciones** | Para que el sistema cumpla con este requerimiento, debe contar con la disponibilidad en horario, logistica y capacidad brindada por parte del administrativo. |
 | **Actor** | Organizador |
 | **Flujo principal** | 1. El administrativo da la disponibilidad de horarios, salones con los cuentas y la capacidad de cada salon.<br>2. El organizador decide cual de esa informacion le sirve y crea su evento .<br>3. El sistema efectua la creacion de el evento dependiendo la informacion antes recibida. |
-| **Diagrama de caso de uso** | *![diagrama1](./../DOSW_ParcialT1_JuanTorres/docs/images/diagrama%20de%20caso%20de%20uso.png)*|
-| **Historia de Usuario** | *![diagrama1](./../DOSW_ParcialT1_JuanTorres/docs/images/historia%20de%20usuario.png)*|
+| **Diagrama de caso de uso** | *![DC1](./../DOSW_ParcialT1_JuanTorres/docs/images/DC.png)*|
+| **Historia de Usuario** | *![Historia de usuario](./../DOSW_ParcialT1_JuanTorres/docs/images/H2.png)*|
 | **Poscondiciones** | Se espera como resultado el organizador vea su evento ya en la plataforma con la especificacion de la fecha, hora y salon del evento. |
 
 ### 2.2 Requerimiento Funcional 2
@@ -68,7 +68,21 @@ El sistema de EventSync debe tener:
 | **Precondiciones** | Para que el sistema cumpla con este requerimiento, EventSync  debe tener previamente creado un evento con cada una de sus especificaciones.|
 | **Actor** | Estudiante |
 | **Flujo principal** | 1. El estudiante consulta un evento por algun tipo.<br>2. El sistema presenta las opciones de conferencias, talleres y hackathons .<br>3. el estudiante decide cual tipo y cual evento en el horario y salon favorito para el.<br>4. El sistema efectua el registro para el evento requerido. |
-| **Diagrama de caso de uso** | *![diagrama2](./../DOSW_ParcialT1_JuanTorres/docs/images/Diagrama%20de%20caso%20de%20uso%202.png)*|
-| **Historia de Usuario** | *![diagrama1](./../DOSW_ParcialT1_JuanTorres/docs/images/historia%20de%20usuario%20%202.png)*|
+| **Diagrama de caso de uso** | *![DC2](./../DOSW_ParcialT1_JuanTorres/docs/images/DC2.png)*|
+| **Historia de Usuario** | *![H2](./../DOSW_ParcialT1_JuanTorres/docs/images/H2.png)*|
 | **Poscondiciones** | Se espera como resultado que la información del estudiante este valida y que se logre registrar correctamente al evento. |
 
+## Punto 6 
+    1. Epica : Crear un evento de un conferencia 
+    2. Historia de usuario: 
+    Como Organizador 
+    Quiero realizar un evento 
+    Para Poder Hablar solo bre una problematica o sobre algun tema interesante 
+    3. Tareas: 
+        a. verificar la disponibilidad y horario del evento
+        b. crear y especificar las indicaciones del evento
+        c. validacion de la informacion 
+        d. actulizacion de la base de datos con este nuevo evento
+        e. actualizacion del front agregando este nuevo evento a el catalogo de eventos 
+## Punto 7 
+| **Diagrama de clases** | *![DIC](./../DOSW_ParcialT1_JuanTorres/docs/images/DIC.png)*|
